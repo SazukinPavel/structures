@@ -51,7 +51,7 @@ export class LinkedList<T>{
 
     pickFromEnd():T{
         if(this.root){
-            let current=this.root
+            let current:ListNode<T> | null=this.root
             while(current){
                 if(current.next===null){
                     const data=current.data
